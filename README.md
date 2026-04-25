@@ -25,14 +25,10 @@ Since I’m focusing on the identity side of things, I used **AZ-ADSYNC-01** to 
 * **VDI Scalability:** I deployed **AZ-VDI-SS** as a Virtual Machine Scale Set to simulate a remote workforce. It’s a cool setup because I’m using **FSLogix profiles** stored on **Private Endpoints** to keep user data persistent, even though the VMs themselves are stateless.
 
 ## Network Topology
-<details>
-  <summary><b> View Full Network Topology (Click image to open high-res)</b></summary>
-  <br>
   <a href="https://github.com/user-attachments/assets/404aae40-b6f4-400e-a1f7-56965fd5583a" target="_blank">
     <img src="https://github.com/user-attachments/assets/404aae40-b6f4-400e-a1f7-56965fd5583a" alt="Hybrid Azure Lab Diagram" width="100%">
   </a>
-  <p align="center"><i>Click the diagram above to open the full-size image in a new tab.</i></p>
-</details>
+  <p align="center"><i>Middle-click the diagram above to open the full-size image in a new tab.</i></p>
 
 ## Troubleshooting & Lessons Learned
 * **The Routing Gap:** I initially couldn't get my local VMs to talk to Azure. It ended up being a mix of an improperly sized GatewaySubnet and a missing NSG rule that was dropping the traffic.
